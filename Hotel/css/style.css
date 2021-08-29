@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+       background-image: url(home.jpg);
+       height: 1000px;
+       width: 100%;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+}
+.navbar h1{
+    float: left;
+    color: white;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar p{
+    padding-top: 50px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-left: -75px;
+    float: left;
+
+}
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 40px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 6px 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .navbar ul li a.active,
+  .navbar ul li a:hover{
+    background: coral;
+    border-radius: 2px;
+  }
+  .home h2{
+      text-align: center;
+      font-size: 80px;
+      color: white;
+      padding-top: 450px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .home h3{
+      text-align: center;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 20px;
+      font-size: 30px;
+  }
+  /*End of Home*/
+  
+  .about .pic{
+    background-image: url(about.jpg);
+    float: left;
+    height: 700px;
+    width: 50%;
+    
+}
+.about{
+    background-color: white;
+    height: 700px;
+    display: block;
+    margin-top: 5px solid  #3d3c39;
+}
+  
+  .about .text{
+      float: right;
+      background-color: #3d3c39;
+      height: 400px;
+      width: 25%;
+      margin-top: 150px;
+      margin-right: 200px;
+      
+  }
+  .text h1{
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      color: white;
+      padding-top: 20px;
+  }
+  .text p{
+      text-align: center;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+  }
+  .service{
+      background-color: #3d3c39;
+      height: 1200px;
+      width: 100%;
+      
+      
+  }
+  .service h1{
+      color: white;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 200px;
+      font-size: 40px;   
+  }
+  .container{
+      width: 960px;
+      min-height: 500px;
+      margin: 70px auto 0 ;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .container .box{
+    position: relative; 
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px; 
+    box-sizing: border-box; 
+    display: inline-block;
+  }
+  .container .box .imgBox{
+      position: relative;
+      overflow: hidden;
+  }
+  .container .box .imgBox img{
+     width: 100%;
+     height: 300px;;
+     transition: transform 2s;
+  }
+  .container .box:hover .imgBox img{
+     transform: scale(1.2);
+  }
+  .container .box .details{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.8);
+      transform: scaleY(0);
+      transition: transform .5s;
+  }
+  .container .box:hover .details{
+     transform: scaleY(1);
+  }
+  .container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+    text-align: center;
+    padding: 15px;
+    color: #fff;  
+  }
+  .container .box .details .content h2{
+      padding:0px;
+      margin: 0px;
+      font-size: 40px;
+      color: coral;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+  }
+  .container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+  }
+  
+ /*End Service*/
+ .contact{
+     height: 650px;
+     width: 100%;
+ }
+ .contact .left{
+     float: left;
+     background-image: url(contact.jpg);
+     height: 650px;
+     width: 50%;
+ }
+ .contact .left p{
+      text-align: center;
+      color: white;
+      margin-top: 250px;
+      font-size: 25px;
+ }
+ .contact .left h1{
+     text-align: center;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 80px;
+     margin-top: 10px;
+ }
+ .contact .right{
+     float: right;
+     height: 650px;
+     width: 50%;
+     background-color:coral;
+ }
+ .contact .right h1{
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 50px;
+     color: black;
+     margin-top: 50px;
+ }
+ .right form{
+     text-align: center;
+     padding-top: 50px;
+ }
+ .right .name{
+    height: 50px;
+    width: 40%;
+    border: none;
+    opacity: 0.6;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.right .email{
+    height: 50px;
+    width: 40%;
+    border: none;
+    opacity: 0.6;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.right .number{
+    height: 50px;
+    width: 40%;
+    border: none;
+    opacity: 0.6;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.right .message{
+        margin-top: 10px;
+        height: 150px;
+        width: 40%;
+        border: none;
+        opacity: 0.6;
+        border-radius: 10px;
+        background-color: black;
+        font-size: 20px;
+        padding-left: 20px; 
+}
+.right .submit{
+    height: 50px;
+    width: 25%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3d3c39 ;
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+}
+.end{
+    height: 200px;
+    background:#3d3c39;
+    
+    padding-top: 20px;
+  }
+  .end h3{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+  }
+  
